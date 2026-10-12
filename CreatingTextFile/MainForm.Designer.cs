@@ -1,0 +1,87 @@
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace LabStream
+{
+    partial class FrmMainMenu
+    {
+        private System.ComponentModel.IContainer components = null;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        private void InitializeComponent()
+        {
+            this.btnSimple = new System.Windows.Forms.Button();
+            this.btnChallenge = new System.Windows.Forms.Button();
+            this.lblSelect = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // btnSimple
+            // 
+            this.btnSimple.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+            this.btnSimple.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSimple.Location = new System.Drawing.Point(12, 98);
+            this.btnSimple.Name = "btnSimple";
+            this.btnSimple.Size = new System.Drawing.Size(120, 50);
+            this.btnSimple.TabIndex = 0;
+            this.btnSimple.Text = "Simple";
+            this.btnSimple.UseVisualStyleBackColor = false;
+            this.btnSimple.Click += new System.EventHandler(this.btnSimple_Click);
+            // 
+            // btnChallenge
+            // 
+            this.btnChallenge.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+            this.btnChallenge.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChallenge.Location = new System.Drawing.Point(208, 98);
+            this.btnChallenge.Name = "btnChallenge";
+            this.btnChallenge.Size = new System.Drawing.Size(120, 50);
+            this.btnChallenge.TabIndex = 1;
+            this.btnChallenge.Text = "Challenge";
+            this.btnChallenge.UseVisualStyleBackColor = false;
+            this.btnChallenge.Click += new System.EventHandler(this.btnChallenge_Click);
+            // 
+            // lblSelect
+            // 
+            this.lblSelect.AutoSize = true;
+            this.lblSelect.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSelect.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
+            this.lblSelect.Location = new System.Drawing.Point(52, 23);
+            this.lblSelect.Name = "lblSelect";
+            this.lblSelect.Size = new System.Drawing.Size(241, 30);
+            this.lblSelect.TabIndex = 2;
+            this.lblSelect.Text = "Select Exercise to Open";
+            // 
+            // FrmMainMenu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.ClientSize = new System.Drawing.Size(340, 160);
+            this.Controls.Add(this.lblSelect);
+            this.Controls.Add(this.btnChallenge);
+            this.Controls.Add(this.btnSimple);
+            this.Name = "FrmMainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Main Menu";
+            this.Load += new System.EventHandler(this.FrmMainMenu_Load_1);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button btnSimple;
+        private System.Windows.Forms.Button btnChallenge;
+        private System.Windows.Forms.Label lblSelect;
+    }
+}
