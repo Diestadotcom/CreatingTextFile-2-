@@ -1,5 +1,5 @@
-﻿using System;
-using LabStream;
+﻿
+using System;
 using System.Windows.Forms;
 
 namespace LabStream
@@ -11,6 +11,7 @@ namespace LabStream
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
             Application.Run(new FrmMainMenu());
         }
     }
